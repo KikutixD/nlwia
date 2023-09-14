@@ -1,13 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Shorts Summary</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="app">
+      <img src="/logo.svg" alt="Logo aplicação" />
+      <h1>Short Summary</h1>
+
+      <form id="form" action="">
+        <input type="url" id="url" placeholder="URL Vídeo" required />
+        <button title="Resumir"><i class="ph ph-play"></i></button>
+      </form>
+
+      <h2>Resumo</h2>
+      <p id="content" class="placeholder">Escolha um Short para resumir</p>
+    </div>
+    <script type="module" src="./web/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
